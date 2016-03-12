@@ -49,11 +49,7 @@ app.controller('peopleCtrl', function($scope, SwapiService, $state) {
 });
 
 app.controller('personCtrl', function($scope, $state, $stateParams, SwapiService) {
-  console.log('$STATEPARAMS.PERSONID', $stateParams.personId);
 
-  //var personObj =  SwapiService.getPerson($stateParams.personId);
-
-  //want to watch: $scope.people = SwapiService.people;
   $scope.$watch(function() { //watch function
     //return the thing to watch
     return SwapiService.person;
@@ -65,5 +61,5 @@ app.controller('personCtrl', function($scope, $state, $stateParams, SwapiService
 
   })
   SwapiService.getPerson($stateParams.personId);
-  console.log('SWAPISERVICE.GETPERSON($STATEPARAMS.PERSONID)', SwapiService.getPerson($stateParams.personId));
+  
 })
