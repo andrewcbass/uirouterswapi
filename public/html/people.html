@@ -1,0 +1,24 @@
+<h1> All the StarWars peeps.</h1>
+
+<ul>
+  <li ng-repeat='person in people' >
+    <button class='btn' type="button" ng-click='detail(person)'>
+      {{person.name}}
+
+    </button>
+  </li>
+</ul>
+
+<ul class="pagination">
+  <li class="waves-effect" ng-click='pagePrev()'><i class="material-icons">chevron_left</i></li>
+  <li class="waves-effect" ng-click='page(1)'>1</li>
+  <li class="waves-effect" ng-click='page(2)'>2</li>
+  <li class="waves-effect" ng-click='page(3)'>3</li>
+  <li class="waves-effect" ng-click='page(4)'>4</li>
+  <li class="waves-effect" ng-click='page(5)'>5</li>
+  <li class="waves-effect" ng-click='page(6)'>6</li>
+  <li class="waves-effect" ng-click='page(7)'>7</li>
+  <li class="waves-effect" ng-click='page(8)'>8</li>
+  <li class="waves-effect" ng-click='page(9)'>9</li>
+  <li class="waves-effect" ng-click='pageNext()'><i class="material-icons">chevron_right</i></li>
+</ul>

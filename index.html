@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js" charset="utf-8"></script>
+  <script src="/js/module.js" charset="utf-8"></script>
+  <script src="/js/controllers.js" charset="utf-8"></script>
+  <script src="js/services.js" charset="utf-8"></script>
+  <title>StarWars</title>
+</head>
+<body ng-app="routingApp">
+  <h1>People of StarWars</h1>
+  <hr>
+
+  <span><a ui-sref="home">Home</a></span>
+  <span><a ui-sref="swPeople">People</a></span>
+  <hr>
+
+  <ui-view>
+
+
+  </ui-view>
+
+
+
+</body>
+</html>
