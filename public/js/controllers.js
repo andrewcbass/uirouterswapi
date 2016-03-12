@@ -56,10 +56,9 @@ app.controller('personCtrl', function($scope, $state, $stateParams, SwapiService
   }, function(newVal, oldVal) { //listener function
 
     $scope.person = newVal;
-    console.log('NEWVAL', newVal);
     //triggered when watched thing changes
 
   })
   SwapiService.getPerson($stateParams.personId);
-  
+
 })
